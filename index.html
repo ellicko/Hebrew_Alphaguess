@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alphaguess Hebrew</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            direction: rtl;
+        }
+        input, button {
+            font-size: 1.2em;
+            margin: 10px;
+        }
+        #feedback, #guesses {
+            font-size: 1.5em;
+            margin-top: 20px;
+            color: #333;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>נחש את המילה בעברית</h1>
+    <p>הזן ניחוש:</p>
+    <input type="text" id="guess" placeholder="הקלד כאן" />
+    <button id="submit">נחש</button>
+    <div id="guesses"></div>
+    <div id="feedback"></div>
+    <button id="newGame" class="hidden">התחל משחק חדש</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
